@@ -1,8 +1,7 @@
 <template>
   <main>
     <remea-header />
-    <logo />
-    <btn />
+    <remea-hero />
   </main>
 </template>
 

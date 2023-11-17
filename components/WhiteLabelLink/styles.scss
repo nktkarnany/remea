@@ -1,0 +1,10 @@
+.white-label-link {
+  border: 1px solid var(--secondary);
+  border-radius: calc(var(--base-margin) * 1.333);
+  mix-blend-mode: multiply;
+  display: flex;
+  padding: 4px 10px 4px 4px;
+  align-items: center;
+  gap: 12px;
+  color: var(--secondary);
+}

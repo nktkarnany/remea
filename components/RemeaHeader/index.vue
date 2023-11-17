@@ -8,16 +8,7 @@
   </nav>
 </template>
 
-<script setup lang="ts">
-withDefaults(
-  defineProps<{
-    text: string;
-  }>(),
-  {
-    text: 'Button'
-  }
-);
-</script>
+<script setup lang="ts"></script>
 
 <script lang="ts">
 export default {

@@ -1,5 +1,7 @@
 <template>
-  <n-button :type="variant" :text="link" :size="size" :theme-overrides="BTN_THEME_OVERRIDES">{{ text }}</n-button>
+  <n-button :type="variant" :round="round" :text="link" :size="size" :theme-overrides="BTN_THEME_OVERRIDES">{{
+    text
+  }}</n-button>
 </template>
 
 <script setup lang="ts">
@@ -11,12 +13,14 @@ withDefaults(
     link: boolean;
     variant: string;
     size: string;
+    round: boolean;
   }>(),
   {
     text: 'Button',
     link: false,
     variant: 'primary',
-    size: 'medium'
+    size: 'medium',
+    round: false
   }
 );
 </script>
