@@ -6,6 +6,7 @@
       Powerful cloud platform designed to overview, manage and bill your electric vehicle charging stations. Powering
       over 100+ chargers on over 20+ locations.
     </p>
+    <NuxtImg src="/hero-img.png" />
   </div>
 </template>
 
