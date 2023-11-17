@@ -2,6 +2,7 @@
   <main>
     <remea-header />
     <remea-hero />
+    <partners-customers />
   </main>
 </template>
 
