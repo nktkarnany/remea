@@ -1,8 +1,7 @@
 <template>
   <div class="main">
-    <hero></hero>
+    <hero/>
   </div>
 </template>
 
-<script lang="ts" setup>
-</script>
+<script lang="ts" setup></script>

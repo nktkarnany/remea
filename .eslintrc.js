@@ -81,7 +81,6 @@ module.exports = {
         math: 'never'
       }
     ],
-    'vue/multi-word-component-names': 'off',
     'vue/no-deprecated-data-object-declaration': 'error',
     'vue/require-name-property': 'error',
     'vue/order-in-components': 'off',

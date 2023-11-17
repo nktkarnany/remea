@@ -6,7 +6,9 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint --ext \".ts,.js,.vue\" --ignore-path .gitignore .",
+    "lint:fix": "npx prettier --write '**/*.{js,ts,css,scss,md,json,vue}' && eslint --fix --ext \".ts,.js,.vue\" --ignore-path .gitignore ."
   },
   "dependencies": {
     "@nuxt/image": "1.0.0-rc.1",
