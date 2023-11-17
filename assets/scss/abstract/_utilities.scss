@@ -42,79 +42,8 @@
   flex-wrap: wrap;
 }
 
-.d-flex-column {
-  display: flex;
-  flex-direction: column;
-}
-
 .flex-1 {
   flex: 1;
-}
-
-.d-flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.d-flex-align-center {
-  display: flex;
-  align-items: center;
-}
-
-// Fonts
-// ----------------------------------------------------------------------
-// rem
-.load-font {
-  font-family: Franklin-Gothic;
-}
-
-// font weight
-
-// Line height
-// ----------------------------------------------------------------------
-
-// Line break
-// ----------------------------------------------------------------------
-
-// Misc
-// ----------------------------------------------------------------------
-.text-ellipsis {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.text-truncate-two-lines {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2; /* This specifies the number of lines to display before truncating */
-  -webkit-box-orient: vertical;
-}
-
-.text-truncate-three-lines {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 3; /* This specifies the number of lines to display before truncating */
-  -webkit-box-orient: vertical;
-}
-
-.text-truncate-four-lines {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 4; /* This specifies the number of lines to display before truncating */
-  -webkit-box-orient: vertical;
-}
-
-.text-truncate-five-lines {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 5; /* This specifies the number of lines to display before truncating */
-  -webkit-box-orient: vertical;
 }
 
 // Cursor
@@ -128,6 +57,14 @@
 // ----------------------------------------------------------------------
 .m-0 {
   margin: 0;
+}
+
+.ml-7 {
+  margin-left: calc(var(--base-margin) * 2.75);
+}
+
+.ml-auto {
+  margin-left: auto;
 }
 
 .mr-5 {

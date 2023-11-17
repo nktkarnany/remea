@@ -1,27 +1,27 @@
 :root {
   // colors
-  --primary: #34c7b9;
-  --primary-dark: #31a69b;
+  --primary: #192b42;
+  --secondary: #47b2a8;
+  --alert: #e24465;
+  --warning: #ffa726;
 
   // Grays
-  --white: #fff;
-  --gray-200: #f8f9fa;
-  --gray-300: #dee2e6;
-  --gray-400: #ced4da;
-  --gray-500: #adb5bd;
-  --gray-600: #6c757d;
-  --gray-700: #495057;
-  --gray-800: #343a40;
-  --gray-900: #212529;
-  --black: #000;
+  --gray-50: #f6f8fa;
+  --gray-100: #f3f5f7;
+  --gray-200: #e8ecf0;
+  --gray-300: #cbd3dd;
+  --gray-400: #acb6c4;
+  --gray-500: #8c99ab;
+  --gray-600: #5d6f86;
+  --gray-700: #4c5c70;
+  --gray-800: #142235;
+  --gray-900: #0f1a28;
+
+  // Whites
+  --white: #ffffff;
+  --white-10: #f9fafb;
 
   //Padding and margin
   --base-margin: 0.75rem;
   --base-font: 100%;
-
-  // Border
-  --border-color: var(--gray-700);
-
-  --base-duration: 600ms;
-  --base-ease: cubic-bezier(0.25, 0.46, 0.45, 0.84);
 }

@@ -1,7 +1,9 @@
 <template>
-  <div class="main">
-    <hero/>
-  </div>
+  <main>
+    <remea-header />
+    <logo />
+    <btn />
+  </main>
 </template>
 
 <script lang="ts" setup></script>
