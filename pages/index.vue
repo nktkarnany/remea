@@ -11,6 +11,7 @@
     <new-product />
     <questions />
     <charging-application />
+    <remea-footer />
   </main>
 </template>
 

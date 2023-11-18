@@ -1,0 +1,16 @@
+.remea-footer {
+  display: flex;
+  gap: calc(var(--base-margin) * 4);
+
+  .content {
+  }
+
+  .links {
+    display: flex;
+    gap: calc(var(--base-margin) * 2);
+
+    ul {
+      list-style: none;
+    }
+  }
+}
