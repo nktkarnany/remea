@@ -3,7 +3,8 @@
     <remea-header />
     <remea-hero />
     <partners-customers />
-    <multiple-content />
+    <platform-overview />
+    <features />
   </main>
 </template>
 

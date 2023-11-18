@@ -1,12 +1,12 @@
 <template>
-  <div class="content">
-    <span class="content-sup">
-      <slot name="superscript"></slot>
-    </span>
-    <h2 class="content-title">
+  <div class="feature">
+    <div class="feature-icon">
+      <slot name="icon"> </slot>
+    </div>
+    <h4 class="feature-title">
       <slot name="title"></slot>
-    </h2>
-    <div class="content-text">
+    </h4>
+    <div class="feature-text">
       <slot name="text"> </slot>
     </div>
   </div>
@@ -16,7 +16,7 @@
 
 <script lang="ts">
 export default {
-  name: 'MultipleContent'
+  name: 'Feature'
 };
 </script>
 
