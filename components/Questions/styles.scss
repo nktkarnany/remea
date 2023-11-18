@@ -1,0 +1,14 @@
+.questions {
+  display: flex;
+  padding: calc(var(--base-margin) * 4);
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: var(--secondary);
+  border-radius: calc(var(--base-margin) * 1.333);
+  color: var(--white);
+
+  .content {
+  }
+  .actions {
+  }
+}

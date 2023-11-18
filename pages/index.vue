@@ -8,6 +8,8 @@
     <free-consultation />
     <solutions />
     <partners />
+    <new-product />
+    <questions />
   </main>
 </template>
 
