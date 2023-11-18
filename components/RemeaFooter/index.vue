@@ -6,6 +6,13 @@
         At Remea we are future-proofing your home and business with a seamless lifestyle-adapted charging experience.
       </p>
       <p>© 2023 Remea. All rights reserved.</p>
+      {{ $t('welcome') }}
+      <form>
+        <select v-model="locale">
+          <option value="en">en</option>
+          <option value="fr">fr</option>
+        </select>
+      </form>
     </div>
     <div class="links">
       <ul>
@@ -42,7 +49,9 @@
   </nav>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const { locale } = useI18n();
+</script>
 
 <script lang="ts">
 export default {
