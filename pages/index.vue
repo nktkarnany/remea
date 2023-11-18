@@ -6,6 +6,7 @@
     <platform-overview />
     <features />
     <free-consultation />
+    <solutions />
   </main>
 </template>
 
