@@ -10,10 +10,6 @@ export default defineNuxtConfig({
 
   devtools: { enabled: true },
 
-  image: {
-    dir: 'assets/images'
-  },
-
   app: {
     head: {
       titleTemplate: 'Remea',
