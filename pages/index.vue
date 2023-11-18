@@ -10,6 +10,7 @@
     <partners />
     <new-product />
     <questions />
+    <charging-application />
   </main>
 </template>
 
