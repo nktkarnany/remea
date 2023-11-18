@@ -7,6 +7,7 @@
     <features />
     <free-consultation />
     <solutions />
+    <partners />
   </main>
 </template>
 
