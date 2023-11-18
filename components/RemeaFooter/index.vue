@@ -10,7 +10,7 @@
       <form>
         <select v-model="locale">
           <option value="en">en</option>
-          <option value="fr">fr</option>
+          <option value="de">de</option>
         </select>
       </form>
     </div>
