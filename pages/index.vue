@@ -5,6 +5,7 @@
     <partners-customers />
     <platform-overview />
     <features />
+    <free-consultation />
   </main>
 </template>
 

@@ -1,0 +1,23 @@
+.free-consultation {
+  display: flex;
+  color: var(--white);
+
+  .content,
+  .img {
+    width: 50%;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: var(--secondary);
+    border-radius: calc(var(--base-margin) * 1.333) 0 0 calc(var(--base-margin) * 1.333);
+
+    h3,
+    p {
+      margin: 0;
+    }
+  }
+}
