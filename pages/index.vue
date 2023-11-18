@@ -3,6 +3,7 @@
     <remea-header />
     <remea-hero />
     <partners-customers />
+    <multiple-content />
   </main>
 </template>
 

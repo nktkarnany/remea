@@ -1,0 +1,23 @@
+.content {
+  &-sup {
+    font-size: calc(var(--base-font) * 0.875);
+    font-weight: 600;
+    color: var(--secondary);
+    margin: 0;
+  }
+
+  &-title {
+    font-size: calc(var(--base-font) * 2.25);
+    font-weight: 600;
+    margin: 0;
+  }
+
+  &-text {
+    font-size: calc(var(--base-font) * 1.125);
+    font-weight: 400;
+    color: var(--gray-600);
+    p {
+      margin: 0;
+    }
+  }
+}
