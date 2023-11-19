@@ -1,9 +1,16 @@
 .partners {
+  padding-top: calc(var(--base-margin) * 10.333);
+  background-color: var(--white);
+
   &-main {
     text-align: center;
+    margin-left: calc(var(--base-margin) * 24);
+    margin-right: calc(var(--base-margin) * 24);
+    margin-bottom: calc(var(--base-margin) * 8);
   }
 
   &-content {
     display: flex;
+    padding: 0 calc(var(--base-margin) * 12.5);
   }
 }

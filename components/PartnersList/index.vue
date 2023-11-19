@@ -2,51 +2,47 @@
   <div class="partners-list">
     <icon-text>
       <template #icon>
-        <NuxtImg src="/check-icon.svg" />
+        <NuxtImg src="/check-icon-sm.svg" />
       </template>
-      <template #text> {{ $t('partner-1-title') }} </template>
+      <template #text>
+        <div class="text">
+          <p class="title">{{ $t('partner-1-title') }}</p>
+          <p class="sub-title">{{ $t('partner-1-sub-title') }}</p>
+        </div>
+      </template>
     </icon-text>
     <icon-text>
       <template #icon>
-        <NuxtImg src="/check-icon.svg" />
+        <NuxtImg src="/check-icon-sm.svg" />
       </template>
-      <template #text> {{ $t('partner-1-sub-title') }} </template>
+      <template #text>
+        <div class="text">
+          <p class="title">{{ $t('partner-2-title') }}</p>
+          <p class="sub-title">{{ $t('partner-2-sub-title') }}</p>
+        </div>
+      </template>
     </icon-text>
     <icon-text>
       <template #icon>
-        <NuxtImg src="/check-icon.svg" />
+        <NuxtImg src="/check-icon-sm.svg" />
       </template>
-      <template #text> {{ $t('partner-2-title') }} </template>
+      <template #text>
+        <div class="text">
+          <p class="title">{{ $t('partner-3-title') }}</p>
+          <p class="sub-title">{{ $t('partner-3-sub-title') }}</p>
+        </div>
+      </template>
     </icon-text>
     <icon-text>
       <template #icon>
-        <NuxtImg src="/check-icon.svg" />
+        <NuxtImg src="/check-icon-sm.svg" />
       </template>
-      <template #text> {{ $t('partner-2-sub-title') }} </template>
-    </icon-text>
-    <icon-text>
-      <template #icon>
-        <NuxtImg src="/check-icon.svg" />
+      <template #text>
+        <div class="text">
+          <p class="title">{{ $t('partner-4-title') }}</p>
+          <p class="sub-title">{{ $t('partner-4-sub-title') }}</p>
+        </div>
       </template>
-      <template #text> {{ $t('partner-3-title') }} </template>
-    </icon-text>
-    <icon-text>
-      <template #icon>
-        <NuxtImg src="/check-icon.svg" />
-      </template>
-      <template #text> {{ $t('partner-3-sub-title') }} </template>
-    </icon-text>
-    <icon-text>
-      <template #icon>
-        <NuxtImg src="/check-icon.svg" />
-      </template>
-      <template #text> {{ $t('partner-4-title') }} </template>
-    </icon-text>
-    <icon-text>
-      <template #icon>
-        <NuxtImg src="/check-icon.svg" />
-      </template>
-      <template #text> {{ $t('partner-4-sub-title') }} </template>
     </icon-text>
     <btn :text="$t('join_as_partner')" variant="success" />
   </div>

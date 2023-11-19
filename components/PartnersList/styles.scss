@@ -1,0 +1,25 @@
+.partners-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-right: calc(var(--base-margin) * 7.67);
+
+  .icon-text {
+    margin-bottom: calc(var(--base-margin) * 5);
+  }
+
+  p.title {
+    font-size: calc(var(--base-font) * 1.25);
+    font-weight: 500;
+    line-height: calc(var(--base-font) * 1.875);
+    margin-bottom: calc(var(--base-margin) * 0.667);
+  }
+
+  p.sub-title {
+    font-size: calc(var(--base-font) * 1);
+    font-weight: 400;
+    line-height: calc(var(--base-font) * 1.5);
+    color: var(--gray-500);
+  }
+}
