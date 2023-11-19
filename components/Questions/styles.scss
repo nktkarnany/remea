@@ -1,14 +1,36 @@
 .questions {
   display: flex;
   padding: calc(var(--base-margin) * 4);
-  justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   background-color: var(--secondary);
   border-radius: calc(var(--base-margin) * 1.333);
   color: var(--white);
+  margin: calc(var(--base-margin) * 10.333) calc(var(--base-margin) * 12.5) 0;
+
+  .content,
+  .actions {
+    width: 50%;
+  }
 
   .content {
+    .title {
+      margin: 0;
+      font-size: calc(var(--base-font) * 1.5);
+      font-weight: 600;
+    }
+
+    .text {
+      margin: 0 0 calc(var(--base-margin) * 3) 0;
+      font-size: calc(var(--base-font) * 1);
+      font-weight: 400;
+    }
   }
+
   .actions {
+    text-align: right;
+
+    .n-button--info-type {
+      color: var(--secondary);
+    }
   }
 }

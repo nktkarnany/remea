@@ -1,3 +1,17 @@
 .new-product {
   display: flex;
+  padding: calc(var(--base-margin) * 10.333) calc(var(--base-margin) * 12.5) 0;
+
+  .content {
+    padding-right: calc(var(--base-margin) * 12.5);
+  }
+
+  .img {
+    object-fit: contain;
+  }
+
+  .content,
+  .img {
+    width: 50%;
+  }
 }
