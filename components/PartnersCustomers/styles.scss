@@ -3,7 +3,8 @@
   flex-direction: column;
   justify-content: center;
   gap: calc(var(--base-margin) * 2.67);
-  margin: calc(var(--base-margin) * 10.333) 0 0 0;
+  padding: calc(var(--base-margin) * 10.333) 0 0 0;
+  background-color: var(--white);
 
   .logos {
     display: flex;

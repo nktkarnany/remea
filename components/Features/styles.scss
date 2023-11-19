@@ -3,9 +3,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: calc(var(--base-margin) * 10.333) 0 0;
+  padding: calc(var(--base-margin) * 10.333) 0 0;
   text-align: center;
   gap: calc(var(--base-margin) * 7.67);
+  background-color: var(--white);
 
   .main {
     margin-left: calc(var(--base-margin) * 30);

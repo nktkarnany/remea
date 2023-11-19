@@ -1,0 +1,10 @@
+.icon-text {
+  display: flex;
+  align-items: flex-start;
+  font-size: calc(var(--base-font) * 1.125);
+  line-height: calc(var(--base-font) * 1.75);
+
+  ::v-deep(p) {
+    margin: 0;
+  }
+}

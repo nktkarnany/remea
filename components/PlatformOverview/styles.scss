@@ -1,7 +1,8 @@
 .platform-overview {
   display: flex;
-  margin: calc(var(--base-margin) * 10.333) calc(var(--base-margin) * 12.5) 0;
+  padding: calc(var(--base-margin) * 10.333) calc(var(--base-margin) * 12.5) 0;
   gap: calc(var(--base-margin) * 5.333);
+  background-color: var(--white);
 
   &-img {
     width: 50%;
