@@ -10,5 +10,61 @@
   }
 
   &-img {
+    position: relative;
+
+    .badge-grid {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      display: grid;
+      grid-template-columns: repeat(11, 1fr);
+      gap: calc(var(--base-margin) * 1.667);
+      padding: calc(var(--base-margin) * 5) calc(var(--base-margin) * 7);
+
+      .badge {
+        font-size: calc(var(--base-font) * 0.875);
+        color: rgba(249, 250, 251, 0.7);
+        font-weight: 600;
+        text-align: center;
+        padding: calc(var(--base-margin) * 0.5);
+        border: 1px solid rgba(249, 250, 251, 0.7);
+        border-radius: calc(var(--base-margin) * 0.5);
+
+        &.active {
+          background-color: var(--secondary);
+          color: var(--white);
+          border-color: var(--secondary);
+        }
+      }
+
+      .residential {
+        grid-area: 1 / 1 / auto / span 3;
+      }
+      .commercial {
+        grid-area: 1 / 4 / auto / span 3;
+      }
+      .prop_dev {
+        grid-area: 1 / 7 / auto / span 5;
+      }
+      .charging_point {
+        grid-area: 2 / 1 / auto / span 5;
+      }
+      .utility {
+        grid-area: 2 / 6 / auto / span 4;
+      }
+      .eics {
+        grid-area: 2 / 10 / auto / span 2;
+      }
+      .hospitality {
+        grid-area: 3 / 1 / auto / span 3;
+      }
+      .ev_fleets {
+        grid-area: 3 / 4 / auto / span 3;
+      }
+      .facility {
+        grid-area: 3 / 7 / auto / span 5;
+      }
+    }
   }
 }

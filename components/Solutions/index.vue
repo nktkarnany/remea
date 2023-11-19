@@ -1,6 +1,6 @@
 <template>
   <div class="solutions">
-    <solution img="/residential-charging.png">
+    <solution img="/residential-charging.png" residential prop-dev>
       <template #content>
         <multiple-content>
           <template #superscript>{{ $t('solutions-upper') }}</template>
@@ -35,7 +35,7 @@
         </multiple-content>
       </template>
     </solution>
-    <solution img="/commercial-charging.png">
+    <solution img="/commercial-charging.png" commercial hospitality>
       <template #content>
         <multiple-content>
           <template #superscript>{{ $t('solutions-upper') }}</template>
@@ -78,7 +78,7 @@
         </multiple-content>
       </template>
     </solution>
-    <solution img="/o&b-charging.png">
+    <solution img="/o&b-charging.png" commercial eics>
       <template #content>
         <multiple-content>
           <template #superscript>{{ $t('solutions-upper') }}</template>
@@ -121,7 +121,7 @@
         </multiple-content>
       </template>
     </solution>
-    <solution img="/fleet-charging.png">
+    <solution img="/fleet-charging.png" ev-fleets>
       <template #content>
         <multiple-content>
           <template #superscript>{{ $t('solutions-upper') }}</template>
