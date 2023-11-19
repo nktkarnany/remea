@@ -1,6 +1,6 @@
 <template>
   <div class="features">
-    <multiple-content>
+    <multiple-content class="main">
       <template #superscript>{{ $t('features-upper') }}</template>
       <template #title>{{ $t('features-title') }}</template>
       <template #text>
@@ -8,7 +8,7 @@
       </template>
     </multiple-content>
     <NuxtImg src="/features.png" />
-    <div class="features-text">
+    <div class="text">
       <feature>
         <template #icon><NuxtImg src="/check-icon.svg" /></template>
         <template #title>{{ $t('feature-1-title') }}</template>

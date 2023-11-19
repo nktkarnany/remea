@@ -1,7 +1,7 @@
 .content {
   &-sup {
     font-size: calc(var(--base-font) * 0.875);
-    font-weight: 600;
+    font-weight: 500;
     color: var(--secondary);
     margin: 0;
   }
@@ -9,13 +9,17 @@
   &-title {
     font-size: calc(var(--base-font) * 2.25);
     font-weight: 600;
-    margin: 0;
+    line-height: calc(var(--base-font) * 2.75);
+    letter-spacing: -1px;
+    margin: 0 0 calc(var(--base-margin) * 2);
   }
 
   &-text {
+    color: var(--gray-600);
     font-size: calc(var(--base-font) * 1.125);
     font-weight: 400;
-    color: var(--gray-600);
+    line-height: calc(var(--base-font) * 1.75);
+
     p {
       margin: 0;
     }

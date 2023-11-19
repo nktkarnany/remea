@@ -3,7 +3,7 @@
     <div class="content">
       <h3 class="title">{{ $t('free_consultation-title') }}</h3>
       <p class="text">{{ $t('free_consultation-text') }}</p>
-      <btn variant="secondary" :text="$t('book_consultation')" />
+      <btn class="btn" variant="info" :text="$t('book_consultation')" />
     </div>
     <NuxtImg class="img" src="/free-consultation.png" />
   </div>

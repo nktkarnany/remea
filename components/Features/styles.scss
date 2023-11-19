@@ -1,7 +1,20 @@
 .features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: calc(var(--base-margin) * 10.333) 0 0;
   text-align: center;
+  gap: calc(var(--base-margin) * 7.67);
 
-  &-text {
+  .main {
+    margin-left: calc(var(--base-margin) * 30);
+    margin-right: calc(var(--base-margin) * 30);
+  }
+
+  .text {
     display: flex;
+    gap: calc(var(--base-margin) * 2.667);
+    margin: 0 calc(var(--base-margin) * 12.5);
   }
 }
