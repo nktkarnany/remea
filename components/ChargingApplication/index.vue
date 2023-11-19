@@ -2,32 +2,29 @@
   <div class="charging-app">
     <NuxtImg class="img" src="/charging-app.png" />
     <multiple-content class="content">
-      <template #superscript>CHARGING APPLICATION</template>
-      <template #title>Remea Plug&Go for Simple Charging</template>
+      <template #superscript>{{ $t('charging_app-upper') }}</template>
+      <template #title>{{ $t('charging_app-title') }}</template>
       <template #text>
-        <p>
-          Our web-based charging application makes it easy for the modern drivers to charge their electric vehicles.
-          We’ve eliminated unnecessary steps to achieve the ultimate convenience.
-        </p>
-        <p>No downloads. No registration. No card-information stored.</p>
-        <btn text="Open charging app" link />
+        <p>{{ $t('charging_app-sub-title-1') }}</p>
+        <p>{{ $t('charging_app-sub-title-2') }}</p>
+        <btn :text="$t('open_charging_app')" link />
         <icon-text>
           <template #icon>
             <NuxtImg src="/1.svg" />
           </template>
-          <template #text> Scan QR code on a charging station </template>
+          <template #text> {{ $t('open_charging_app-step-1') }} </template>
         </icon-text>
         <icon-text>
           <template #icon>
             <NuxtImg src="/2.svg" />
           </template>
-          <template #text> Enter your details </template>
+          <template #text> {{ $t('open_charging_app-step-2') }} </template>
         </icon-text>
         <icon-text>
           <template #icon>
             <NuxtImg src="/3.svg" />
           </template>
-          <template #text> Choose payment method and charge </template>
+          <template #text> {{ $t('open_charging_app-step-3') }} </template>
         </icon-text>
       </template>
     </multiple-content>

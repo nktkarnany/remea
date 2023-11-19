@@ -2,11 +2,8 @@
   <nav class="remea-footer">
     <div class="content">
       <logo />
-      <p>
-        At Remea we are future-proofing your home and business with a seamless lifestyle-adapted charging experience.
-      </p>
-      <p>© 2023 Remea. All rights reserved.</p>
-      {{ $t('welcome') }}
+      <p>{{ $t('remea_caption') }}</p>
+      <p>{{ $t('remea_copyright') }}</p>
       <form>
         <select v-model="locale">
           <option value="en">en</option>
@@ -16,34 +13,34 @@
     </div>
     <div class="links">
       <ul>
-        <li>Product</li>
-        <li><btn text="Overview" link /></li>
-        <li><btn text="Features" link /></li>
-        <li><btn text="Solutions" link /></li>
-        <li><btn text="Whitelabel" link /></li>
+        <li>{{ $t('product') }}</li>
+        <li><btn :text="$t('overview')" link /></li>
+        <li><btn :text="$t('features')" link /></li>
+        <li><btn :text="$t('solutions')" link /></li>
+        <li><btn :text="$t('whitelabel')" link /></li>
       </ul>
       <ul>
-        <li>Company</li>
-        <li><btn text="About Us" link /></li>
-        <li><btn text="Careers" link /></li>
-        <li><btn text="Press" link /></li>
-        <li><btn text="News" link /></li>
+        <li>{{ $t('company') }}</li>
+        <li><btn :text="$t('about_us')" link /></li>
+        <li><btn :text="$t('careers')" link /></li>
+        <li><btn :text="$t('press')" link /></li>
+        <li><btn :text="$t('news')" link /></li>
       </ul>
       <ul>
-        <li>Resources</li>
-        <li><btn text="Downloads" link /></li>
+        <li>{{ $t('resources') }}</li>
+        <li><btn :text="$t('downloads')" link /></li>
       </ul>
       <ul>
-        <li>Social</li>
-        <li><btn text="LinkedIn" link /></li>
-        <li><btn text="AngelList" link /></li>
+        <li>{{ $t('social') }}</li>
+        <li><btn :text="$t('linkedin')" link /></li>
+        <li><btn :text="$t('angellist')" link /></li>
       </ul>
       <ul>
-        <li>Legal</li>
-        <li><btn text="Terms" link /></li>
-        <li><btn text="Privacy" link /></li>
-        <li><btn text="Cookies" link /></li>
-        <li><btn text="Licenses" link /></li>
+        <li>{{ $t('legal') }}</li>
+        <li><btn :text="$t('terms')" link /></li>
+        <li><btn :text="$t('privacy')" link /></li>
+        <li><btn :text="$t('cookies')" link /></li>
+        <li><btn :text="$t('licenses')" link /></li>
       </ul>
     </div>
   </nav>

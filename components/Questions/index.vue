@@ -1,11 +1,11 @@
 <template>
   <div class="questions">
     <div class="content">
-      <h3 class="title">Have questions?</h3>
-      <p class="text">Our team of experts is at your disposal. Book your call now!</p>
+      <h3 class="title">{{ $t('questions') }}</h3>
+      <p class="text">{{ $t('questions-text') }}</p>
     </div>
     <div class="actions">
-      <btn variant="secondary" text="Book Consultation" />
+      <btn variant="secondary" :text="$t('book_consultation')" />
     </div>
   </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
   <div class="partners-customers">
-    <p class="text-md text-center">Join our partners and customers...</p>
+    <p class="text-md text-center">{{ $t('join_our_partners_and_customers') }}</p>
     <div class="partners-customers-logos">
       <NuxtImg src="/moja.png" />
       <NuxtImg src="/polnilnics.png" />

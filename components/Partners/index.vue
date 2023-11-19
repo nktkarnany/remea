@@ -1,13 +1,10 @@
 <template>
   <div class="partners">
     <multiple-content class="partners-main">
-      <template #superscript>OUR PARTNERS</template>
-      <template #title>Hardware Manufacturers and Installers (EICs)</template>
+      <template #superscript>{{ $t('our_partners-upper') }}</template>
+      <template #title>{{ $t('partners-title') }}</template>
       <template #text>
-        <p>
-          Discover the compelling reasons to become our partner and leverage the platform’s capabilities to provide your
-          customers with the experience they are looking for.
-        </p>
+        <p>{{ $t('partners-sub-title') }}</p>
       </template>
     </multiple-content>
     <div class="partners-content">

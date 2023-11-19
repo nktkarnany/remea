@@ -4,57 +4,51 @@
       <template #icon>
         <NuxtImg src="/check-icon.svg" />
       </template>
-      <template #text> Offer complete turnkey solutions </template>
+      <template #text> {{ $t('partner-1-title') }} </template>
     </icon-text>
     <icon-text>
       <template #icon>
         <NuxtImg src="/check-icon.svg" />
       </template>
-      <template #text> Provide all-encompassing charging solutions for small and medium-sized businesses. </template>
+      <template #text> {{ $t('partner-1-sub-title') }} </template>
     </icon-text>
     <icon-text>
       <template #icon>
         <NuxtImg src="/check-icon.svg" />
       </template>
-      <template #text> Real-Time Operational Insight </template>
+      <template #text> {{ $t('partner-2-title') }} </template>
     </icon-text>
     <icon-text>
       <template #icon>
         <NuxtImg src="/check-icon.svg" />
       </template>
-      <template #text>
-        Monitor charger status and operations in real time, ensuring smooth functionality while minimizing downtime and
-        disruptions.
-      </template>
+      <template #text> {{ $t('partner-2-sub-title') }} </template>
     </icon-text>
     <icon-text>
       <template #icon>
         <NuxtImg src="/check-icon.svg" />
       </template>
-      <template #text> Check Charger Connectivity Post-Installation </template>
+      <template #text> {{ $t('partner-3-title') }} </template>
     </icon-text>
     <icon-text>
       <template #icon>
         <NuxtImg src="/check-icon.svg" />
       </template>
-      <template #text> Receive automated alerts about charger malfunctions, enabling swift issue resolution. </template>
+      <template #text> {{ $t('partner-3-sub-title') }} </template>
     </icon-text>
     <icon-text>
       <template #icon>
         <NuxtImg src="/check-icon.svg" />
       </template>
-      <template #text> Profit-Sharing Model </template>
+      <template #text> {{ $t('partner-4-title') }} </template>
     </icon-text>
     <icon-text>
       <template #icon>
         <NuxtImg src="/check-icon.svg" />
       </template>
-      <template #text>
-        Earn a commission from our charging profits, amplifying your revenue streams. Uphold a sterling reputation by
-        providing reliable, uninterrupted charging experiences.
-      </template>
+      <template #text> {{ $t('partner-4-sub-title') }} </template>
     </icon-text>
-    <btn text="Join as Partner" variant="success" />
+    <btn :text="$t('join_as_partner')" variant="success" />
   </div>
 </template>
 

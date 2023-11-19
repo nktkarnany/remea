@@ -1,10 +1,10 @@
 <template>
   <nav class="remea-header">
     <logo />
-    <btn class="ml-7" text="Product" link />
-    <btn class="ml-7" text="Solutions" link />
-    <btn class="ml-7" text="Partners" link />
-    <btn class="ml-auto" variant="success" text="Book Consultation" />
+    <btn class="ml-7" :text="$t('product')" link />
+    <btn class="ml-7" :text="$t('solutions')" link />
+    <btn class="ml-7" :text="$t('partners')" link />
+    <btn class="ml-auto" variant="success" :text="$t('book_consultation')" />
   </nav>
 </template>
 

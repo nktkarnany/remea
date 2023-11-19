@@ -1,7 +1,7 @@
 <template>
   <div class="white-label-link">
-    <btn variant="success" text="New Product" size="small" round />
-    <span>White-label solution available!</span>
+    <btn variant="success" :text="$t('new_product')" size="small" round />
+    <span>{{ $t('white_label_solution_available') }}</span>
   </div>
 </template>
 

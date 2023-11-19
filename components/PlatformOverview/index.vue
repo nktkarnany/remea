@@ -2,15 +2,14 @@
   <div class="platform-overview">
     <NuxtImg class="platform-overview-img" src="/platform-overview.png" />
     <multiple-content class="platform-overview-content">
-      <template #superscript>PLATFORM OVERVIEW</template>
-      <template #title>User-friendly solution to support your EV charging needs.</template>
+      <template #superscript>{{ $t('platform_overview-upper') }}</template>
+      <template #title>{{ $t('platform_overview-title') }}</template>
       <template #text>
         <p>
-          As the world swiftly adopts zero-emission policies, the electric vehicle industry is expected to grow
-          exponentially. However, today's charging infrastructure still has a long way to go.
+          {{ $t('platform_overview-text-1') }}
         </p>
-        <p>Persistent issues remain, which is exactly why we built Remea.</p></template
-      >
+        <p>{{ $t('platform_overview-text-2') }}</p>
+      </template>
     </multiple-content>
   </div>
 </template>

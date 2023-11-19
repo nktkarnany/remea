@@ -1,37 +1,30 @@
 <template>
   <div class="features">
     <multiple-content>
-      <template #superscript>Features</template>
-      <template #title>Everything from setup to billing - we’ve got you covered.</template>
+      <template #superscript>{{ $t('features-upper') }}</template>
+      <template #title>{{ $t('features-title') }}</template>
       <template #text>
-        <p>
-          Remea is the operating platform to manage and monitor EV charging stations according to your needs and bill
-          the charging in a way that integrates with your business model.
-        </p>
+        <p>{{ $t('features-text') }}</p>
       </template>
     </multiple-content>
     <NuxtImg src="/features.png" />
     <div class="features-text">
       <feature>
         <template #icon><NuxtImg src="/check-icon.svg" /></template>
-        <template #title>Easy & Flexible Setup</template>
-        <template #text>
-          Set your charging stations to fit your needs by adjusting the settings in the dashboard.
-        </template>
+        <template #title>{{ $t('feature-1-title') }}</template>
+        <template #text>{{ $t('feature-1-text') }}</template>
       </feature>
 
       <feature>
         <template #icon><NuxtImg src="/check-icon.svg" /></template>
-        <template #title>Energy Monitoring</template>
-        <template #text> Track exactly how much energy is being used to manage your consumption effectively. </template>
+        <template #title>{{ $t('feature-2-title') }}</template>
+        <template #text>{{ $t('feature-2-text') }}</template>
       </feature>
 
       <feature>
         <template #icon><NuxtImg src="/check-icon.svg" /></template>
-        <template #title>Cost Settlement</template>
-        <template #text>
-          Automated process of charging costs, payments, and bills issued for EV charging services.
-        </template>
+        <template #title>{{ $t('feature-3-title') }}</template>
+        <template #text>{{ $t('feature-3-text') }}</template>
       </feature>
     </div>
   </div>

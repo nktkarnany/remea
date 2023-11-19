@@ -1,9 +1,9 @@
 <template>
   <div class="free-consultation">
     <div class="content">
-      <h3 class="title">Start your 30-min FREE consultation.</h3>
-      <p class="text">Not sure where to start? Speak to our team directly.</p>
-      <btn variant="secondary">Book Consultation</btn>
+      <h3 class="title">{{ $t('free_consultation-title') }}</h3>
+      <p class="text">{{ $t('free_consultation-text') }}</p>
+      <btn variant="secondary" :text="$t('book_consultation')" />
     </div>
     <NuxtImg class="img" src="/free-consultation.png" />
   </div>
