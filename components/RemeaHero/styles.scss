@@ -3,4 +3,32 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: calc(var(--base-margin) * 2);
+  margin: calc(var(--base-margin) * 7.67) 0 0 0;
+
+  .title {
+    font-size: calc(var(--base-font) * 2.8125);
+    font-weight: 600;
+    line-height: calc(var(--base-font) * 3.125);
+    letter-spacing: -0.9px;
+    text-align: center;
+    margin: 0;
+    width: calc(var(--base-margin) * 70.5);
+  }
+
+  .sub-title {
+    font-size: calc(var(--base-font) * 1.125);
+    font-weight: 400;
+    line-height: calc(var(--base-font) * 1.875);
+    text-align: center;
+    margin: 0;
+    width: calc(var(--base-margin) * 64);
+  }
+
+  .actions {
+    display: flex;
+    gap: var(--base-margin);
+    margin-top: calc(var(--base-margin) * 3.333);
+    margin-bottom: calc(var(--base-margin) * 4.167);
+  }
 }

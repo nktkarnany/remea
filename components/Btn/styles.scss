@@ -1,0 +1,31 @@
+.n-button {
+  padding: calc(var(--base-margin) * 1.333) calc(var(--base-margin) * 2.333);
+
+  // Applied to all variants
+  :deep(.n-button__state-border),
+  :deep(.n-button__border) {
+    display: none !important;
+  }
+
+  // Variants (or "types")
+  &--info-type {
+    color: var(--primary);
+    background-color: var(--white);
+    border: 1px solid var(--gray-300);
+
+    &:not(.cm-btn--borderless) {
+      border: 1px solid var(--gray-300);
+    }
+
+    &:hover {
+      color: var(--primary);
+      background-color: var(--white);
+    }
+
+    &:active,
+    &:focus {
+      color: var(--primary);
+      background-color: var(--white);
+    }
+  }
+}

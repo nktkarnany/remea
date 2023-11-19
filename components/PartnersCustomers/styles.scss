@@ -1,7 +1,14 @@
 .partners-customers {
-  &-logos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: calc(var(--base-margin) * 2.67);
+  margin: calc(var(--base-margin) * 10.333) 0 0 0;
+
+  .logos {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 calc(var(--base-margin) * 12.5);
   }
 }

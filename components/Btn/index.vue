@@ -30,3 +30,5 @@ export default {
   name: 'Btn'
 };
 </script>
+
+<style lang="scss" scoped src="./styles.scss"></style>
