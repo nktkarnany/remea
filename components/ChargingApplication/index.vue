@@ -7,22 +7,23 @@
       <template #text>
         <p>{{ $t('charging_app-sub-title-1') }}</p>
         <p>{{ $t('charging_app-sub-title-2') }}</p>
-        <btn :text="$t('open_charging_app')" link />
-        <icon-text>
+        <btn :text="$t('open_charging_app')" link class="mb-7" />
+        <div class="divider"></div>
+        <icon-text class="mb-5">
           <template #icon>
-            <NuxtImg src="/1.svg" />
+            <NuxtImg src="/1.svg" width="30" />
           </template>
           <template #text> {{ $t('open_charging_app-step-1') }} </template>
         </icon-text>
-        <icon-text>
+        <icon-text class="mb-5">
           <template #icon>
-            <NuxtImg src="/2.svg" />
+            <NuxtImg src="/2.svg" width="30" />
           </template>
           <template #text> {{ $t('open_charging_app-step-2') }} </template>
         </icon-text>
         <icon-text>
           <template #icon>
-            <NuxtImg src="/3.svg" />
+            <NuxtImg src="/3.svg" width="30" />
           </template>
           <template #text> {{ $t('open_charging_app-step-3') }} </template>
         </icon-text>

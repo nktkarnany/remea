@@ -1,7 +1,7 @@
 <template>
   <div class="platform-overview">
-    <NuxtImg class="platform-overview-img" src="/platform-overview.png" />
-    <multiple-content class="platform-overview-content">
+    <NuxtImg class="img" src="/platform-overview.png" />
+    <multiple-content class="content">
       <template #superscript>{{ $t('platform_overview-upper') }}</template>
       <template #title>{{ $t('platform_overview-title') }}</template>
       <template #text>

@@ -1,16 +1,33 @@
 .remea-footer {
   display: flex;
-  gap: calc(var(--base-margin) * 4);
+  padding: calc(var(--base-margin) * 10.333) calc(var(--base-margin) * 10.333) 0;
+  gap: calc(var(--base-margin) * 5.333);
+  background-color: var(--white);
 
   .content {
+    color: var(--gray-500);
+    width: calc(var(--base-margin) * 22.25);
   }
 
   .links {
     display: flex;
-    gap: calc(var(--base-margin) * 2);
+    gap: calc(var(--base-margin) * 5.333);
 
     ul {
+      display: flex;
+      flex-direction: column;
       list-style: none;
+      padding-left: 0;
+      margin: 0;
+
+      li.head {
+        color: var(--gray-400);
+        font-size: calc(var(--base-font) * 0.875);
+      }
+
+      button {
+        padding-left: 0;
+      }
     }
   }
 }
