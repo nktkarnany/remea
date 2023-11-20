@@ -5,7 +5,7 @@
   background-color: var(--secondary);
   border-radius: calc(var(--base-margin) * 1.333);
   color: var(--white);
-  margin: calc(var(--base-margin) * 10.333) calc(var(--base-margin) * 10.333) 0;
+  margin: var(--main-margin) var(--main-margin) 0;
 
   .content,
   .actions {
@@ -31,6 +31,17 @@
 
     .n-button--info-type {
       color: var(--secondary);
+    }
+  }
+
+  @media (max-width: 480px) {
+    margin-top: calc(var(--base-margin) * 7.67);
+    flex-direction: column;
+
+    .content,
+    .actions {
+      width: 100%;
+      text-align: left;
     }
   }
 }

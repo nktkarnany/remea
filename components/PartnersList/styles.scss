@@ -22,4 +22,14 @@
     line-height: calc(var(--base-font) * 1.5);
     color: var(--gray-500);
   }
+
+  @media (max-width: 480px) {
+    margin-top: calc(var(--base-margin) * 2);
+    flex-direction: column;
+    padding: 0;
+
+    .icon-text {
+      margin-bottom: calc(var(--base-margin) * 2);
+    }
+  }
 }

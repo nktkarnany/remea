@@ -13,7 +13,7 @@
     letter-spacing: -0.9px;
     text-align: center;
     margin: 0;
-    width: calc(var(--base-margin) * 70.5);
+    padding: 0 calc(var(--base-margin) * 70.5);
   }
 
   .sub-title {
@@ -22,7 +22,7 @@
     line-height: calc(var(--base-font) * 1.875);
     text-align: center;
     margin: 0;
-    width: calc(var(--base-margin) * 64);
+    padding: 0 calc(var(--base-margin) * 64);
   }
 
   .actions {
@@ -30,5 +30,16 @@
     gap: var(--base-margin);
     margin-top: calc(var(--base-margin) * 3.333);
     margin-bottom: calc(var(--base-margin) * 4.167);
+  }
+
+  @media (max-width: 480px) {
+    .title,
+    .sub-title {
+      padding: 0;
+    }
+
+    .img {
+      width: 100%;
+    }
   }
 }

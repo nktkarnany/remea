@@ -9,7 +9,7 @@
     </multiple-content>
     <div class="partners-content">
       <partners-list />
-      <NuxtImg src="/partners.png" />
+      <NuxtImg class="img" src="/partners.png" />
     </div>
   </div>
 </template>

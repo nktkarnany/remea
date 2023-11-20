@@ -9,7 +9,7 @@
       <btn variant="info" :text="$t('demo')" />
       <btn variant="success" :text="$t('book_consultation')" />
     </div>
-    <NuxtImg src="/hero-img.png" />
+    <NuxtImg class="img" src="/hero-img.png" />
   </div>
 </template>
 

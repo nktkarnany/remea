@@ -2,11 +2,11 @@
   <div class="partners-customers">
     <p class="text-md text-center">{{ $t('join_our_partners_and_customers') }}</p>
     <div class="logos">
-      <NuxtImg src="/moja.png" />
-      <NuxtImg src="/polnilnics.png" />
-      <NuxtImg src="/postojnska.png" />
-      <NuxtImg src="/lektro.png" />
-      <NuxtImg src="/science-park.png" />
+      <NuxtImg class="img1" src="/moja.png" />
+      <NuxtImg class="img2" src="/polnilnics.png" />
+      <NuxtImg class="img3" src="/postojnska.png" />
+      <NuxtImg class="img4" src="/lektro.png" />
+      <NuxtImg class="img5" src="/science-park.png" />
     </div>
   </div>
 </template>

@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: calc(var(--base-margin) * 10.333) 0 0;
+  padding: var(--main-margin) 0 0;
   text-align: center;
   gap: calc(var(--base-margin) * 7.67);
   background-color: var(--white);
@@ -16,6 +16,25 @@
   .text {
     display: flex;
     gap: calc(var(--base-margin) * 2.667);
-    margin: 0 calc(var(--base-margin) * 10.333);
+    margin: 0 var(--main-margin);
+  }
+
+  @media (max-width: 480px) {
+    margin-top: calc(var(--base-margin) * 7.67);
+    text-align: left;
+    gap: calc(var(--base-margin) * 2);
+
+    .main {
+      margin: 0;
+    }
+
+    .img {
+      width: 100%;
+    }
+
+    .text {
+      text-align: center;
+      flex-direction: column;
+    }
   }
 }

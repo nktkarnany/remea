@@ -1,8 +1,12 @@
 .solutions {
-  padding-top: calc(var(--base-margin) * 10.333);
+  padding-top: var(--main-margin);
   background-color: var(--white);
 
   .solution:nth-of-type(even) {
     background-color: var(--white-10);
+  }
+
+  @media (max-width: 480px) {
+    margin-top: calc(var(--base-margin) * 7.67);
   }
 }

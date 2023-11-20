@@ -1,6 +1,6 @@
 .platform-overview {
   display: flex;
-  padding: calc(var(--base-margin) * 10.333) calc(var(--base-margin) * 10.333) 0;
+  padding: var(--main-margin) var(--main-margin) 0;
   gap: calc(var(--base-margin) * 5.333);
   background-color: var(--white);
 
@@ -10,5 +10,16 @@
 
   .content {
     width: 50%;
+  }
+
+  @media (max-width: 480px) {
+    margin-top: calc(var(--base-margin) * 7.67);
+    flex-direction: column;
+    gap: calc(var(--base-margin) * 2);
+
+    .img,
+    .content {
+      width: 100%;
+    }
   }
 }

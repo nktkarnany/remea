@@ -1,6 +1,6 @@
 .remea-footer {
   display: flex;
-  padding: calc(var(--base-margin) * 10.333) calc(var(--base-margin) * 10.333) 0;
+  padding: var(--main-margin) var(--main-margin) 0;
   gap: calc(var(--base-margin) * 5.333);
   background-color: var(--white);
 
@@ -28,6 +28,18 @@
       button {
         padding-left: 0;
       }
+    }
+  }
+
+  @media (max-width: 480px) {
+    margin-top: calc(var(--base-margin) * 7.67);
+    flex-direction: column;
+
+    .links {
+      display: grid;
+      column-gap: 0;
+      row-gap: calc(var(--base-margin) * 2);
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 }

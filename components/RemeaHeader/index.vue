@@ -4,7 +4,7 @@
     <btn class="ml-7" :text="$t('product')" link />
     <btn class="ml-7" :text="$t('solutions')" link />
     <btn class="ml-7" :text="$t('partners')" link />
-    <btn class="ml-auto" variant="success" :text="$t('book_consultation')" />
+    <btn class="ml-auto book" variant="success" :text="$t('book_consultation')" />
   </nav>
 </template>
 

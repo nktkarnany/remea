@@ -24,4 +24,13 @@
   //Padding and margin
   --base-margin: 0.75rem;
   --base-font: 1rem;
+
+  --main-margin: calc(var(--base-margin) * 10.333);
+}
+
+@media (max-width: 480px) {
+  :root {
+    --main-margin: 0;
+    --white-10: #ffffff;
+  }
 }

@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 0 calc(var(--base-margin) * 10.333);
+    padding: 0 var(--main-margin);
   }
 
   &-img {
@@ -64,6 +64,37 @@
       }
       .facility {
         grid-area: 3 / 7 / auto / span 5;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column-reverse;
+    padding-top: calc(var(--base-margin) * 5.333);
+    gap: calc(var(--base-margin) * 2);
+
+    &-img,
+    &-content {
+      width: 100%;
+    }
+
+    &-img {
+      height: calc(var(--base-margin) * 20);
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .badge-grid {
+      padding: calc(var(--base-margin));
+      top: 50%;
+      transform: translateY(-50%);
+
+      .badge {
+        font-size: calc(var(--base-font) * 0.5);
       }
     }
   }

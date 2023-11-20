@@ -1,9 +1,9 @@
 .new-product {
   display: flex;
-  padding: calc(var(--base-margin) * 10.333) calc(var(--base-margin) * 10.333) 0;
+  padding: var(--main-margin) var(--main-margin) 0;
 
   .content {
-    padding-right: calc(var(--base-margin) * 10.333);
+    padding-right: var(--main-margin);
   }
 
   .img {
@@ -13,5 +13,21 @@
   .content,
   .img {
     width: 50%;
+  }
+
+  @media (max-width: 480px) {
+    margin-top: calc(var(--base-margin) * 7.67);
+    flex-direction: column-reverse;
+    padding: 0;
+
+    .content {
+      padding: 0;
+      padding-top: calc(var(--base-margin) * 2);
+    }
+
+    .content,
+    .img {
+      width: 100%;
+    }
   }
 }

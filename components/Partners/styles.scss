@@ -1,5 +1,5 @@
 .partners {
-  padding-top: calc(var(--base-margin) * 10.333);
+  padding-top: var(--main-margin);
   background-color: var(--white);
 
   &-main {
@@ -11,6 +11,24 @@
 
   &-content {
     display: flex;
-    padding: 0 calc(var(--base-margin) * 10.333);
+    padding: 0 var(--main-margin);
+  }
+
+  @media (max-width: 480px) {
+    margin-top: calc(var(--base-margin) * 7.67);
+
+    &-main {
+      margin: 0;
+      text-align: left;
+    }
+
+    &-content {
+      width: 100%;
+      padding: 0;
+
+      img {
+        display: none;
+      }
+    }
   }
 }

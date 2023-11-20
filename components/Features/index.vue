@@ -7,7 +7,7 @@
         <p>{{ $t('features-text') }}</p>
       </template>
     </multiple-content>
-    <NuxtImg src="/features.png" />
+    <NuxtImg class="img" src="/features.png" />
     <div class="text">
       <feature>
         <template #icon><NuxtImg src="/check-icon.svg" /></template>

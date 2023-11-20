@@ -1,7 +1,7 @@
 .free-consultation {
   display: flex;
   color: var(--white);
-  padding: calc(var(--base-margin) * 10.333) calc(var(--base-margin) * 10.333) 0;
+  padding: var(--main-margin) var(--main-margin) 0;
   background-color: var(--white);
 
   .content,
@@ -33,5 +33,9 @@
     .btn {
       color: var(--secondary);
     }
+  }
+
+  @media (max-width: 480px) {
+    display: none;
   }
 }
