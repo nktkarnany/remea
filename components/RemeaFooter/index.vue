@@ -4,12 +4,6 @@
       <logo />
       <p>{{ $t('remea_caption') }}</p>
       <p>{{ $t('remea_copyright') }}</p>
-      <form>
-        <select v-model="locale">
-          <option value="en">en</option>
-          <option value="de">de</option>
-        </select>
-      </form>
     </div>
     <div class="links">
       <ul>
@@ -46,9 +40,7 @@
   </nav>
 </template>
 
-<script setup lang="ts">
-const { locale } = useI18n();
-</script>
+<script setup lang="ts"></script>
 
 <script lang="ts">
 export default {
