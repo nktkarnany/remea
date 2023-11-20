@@ -48,8 +48,8 @@ const options = ref([
     value: 'de'
   },
   {
-    label: 'sl',
-    value: 'sl'
+    label: 'si',
+    value: 'si'
   }
 ]);
 
