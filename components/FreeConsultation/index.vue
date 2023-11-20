@@ -3,7 +3,14 @@
     <div class="content">
       <h3 class="title">{{ $t('free_consultation-title') }}</h3>
       <p class="text">{{ $t('free_consultation-text') }}</p>
-      <btn class="btn" variant="info" :text="$t('book_consultation')" />
+      <btn
+        class="btn"
+        variant="info"
+        :text="$t('book_consultation')"
+        href="https://calendly.com/remea-meet/remea"
+        tag="a"
+        target="_blank"
+      />
     </div>
     <NuxtImg class="img" src="/free-consultation.png" />
   </div>

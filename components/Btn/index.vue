@@ -6,6 +6,9 @@
     :size="size"
     :theme-overrides="BTN_THEME_OVERRIDES"
     :icon-placement="iconPlacement"
+    :href="href"
+    :tag="tag"
+    :target="target"
   >
     {{ text }}
     <template #icon>
@@ -25,6 +28,9 @@ withDefaults(
     size: string;
     round: boolean;
     iconPlacement: string;
+    href?: string;
+    tag?: string;
+    target?: string;
   }>(),
   {
     text: '',

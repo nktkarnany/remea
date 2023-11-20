@@ -7,7 +7,13 @@
     </p>
     <div class="actions">
       <btn variant="info" :text="$t('demo')" />
-      <btn variant="success" :text="$t('book_consultation')" />
+      <btn
+        variant="success"
+        :text="$t('book_consultation')"
+        href="https://calendly.com/remea-meet/remea"
+        tag="a"
+        target="_blank"
+      />
     </div>
     <NuxtImg class="img" src="/hero-img.png" />
   </div>

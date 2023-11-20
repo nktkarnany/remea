@@ -4,14 +4,16 @@
   align-items: center;
   padding: 0 var(--main-margin);
 
-  button.menu {
+  button.menu,
+  a.menu {
     display: none;
   }
 
   @media (max-width: 480px) {
     justify-content: flex-start;
 
-    button {
+    button,
+    a {
       display: none;
 
       &.menu {

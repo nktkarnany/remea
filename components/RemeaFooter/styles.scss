@@ -25,7 +25,10 @@
         font-size: calc(var(--base-font) * 0.875);
       }
 
+      a,
       button {
+        padding-top: calc(var(--base-margin) * 1);
+        padding-bottom: calc(var(--base-margin) * 1);
         padding-left: 0;
       }
     }

@@ -3,12 +3,12 @@
     <remea-header />
     <remea-hero />
     <partners-customers />
-    <platform-overview />
-    <features />
+    <platform-overview id="overview" />
+    <features id="features" />
     <free-consultation />
-    <solutions />
-    <partners />
-    <new-product />
+    <solutions id="solutions" />
+    <partners id="partners" />
+    <new-product id="newProduct" />
     <questions />
     <charging-application />
     <remea-footer />

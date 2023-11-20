@@ -44,7 +44,13 @@
         </div>
       </template>
     </icon-text>
-    <btn :text="$t('join_as_partner')" variant="success" />
+    <btn
+      :text="$t('join_as_partner')"
+      variant="success"
+      href="https://calendly.com/remea-meet/remea"
+      tag="a"
+      target="_blank"
+    />
   </div>
 </template>
 

@@ -1,11 +1,17 @@
 <template>
   <nav class="remea-header">
     <logo />
-    <btn class="ml-7" :text="$t('product')" link />
-    <btn class="ml-7" :text="$t('solutions')" link />
-    <btn class="ml-7" :text="$t('partners')" link />
+    <btn :text="$t('product')" link href="#overview" tag="a" />
+    <n-popselect v-model:value="solutions" :options="solutionOptions">
+      <btn :text="$t('solutions')" link>
+        <template #icon>
+          <NuxtImg src="./chevron-down.svg" />
+        </template>
+      </btn>
+    </n-popselect>
+    <btn :text="$t('partners')" link href="#partners" tag="a" />
     <n-popselect v-model:value="locale" :options="options">
-      <btn class="ml-auto" :text="locale || 'en'" link>
+      <btn class="ml-auto text-uppercase" :text="locale || 'en'" link>
         <template #icon>
           <NuxtImg src="./chevron-down.svg" />
         </template>
@@ -22,7 +28,7 @@
         <btn :text="$t('solutions')" link />
         <btn :text="$t('partners')" link />
         <n-popselect v-model:value="locale" :options="options">
-          <btn :text="locale || 'en'" link>
+          <btn class="text-uppercase" :text="locale || 'en'" link>
             <template #icon>
               <NuxtImg src="./chevron-down.svg" />
             </template>
@@ -36,20 +42,41 @@
 <script setup lang="ts">
 import type { DrawerPlacement } from 'naive-ui';
 
-const { locale } = useI18n();
+const { locale, t } = useI18n();
+
+const solutions = ref();
+
+const solutionOptions = computed(() => [
+  {
+    label: t('solution-1'),
+    value: 'residential-charging'
+  },
+  {
+    label: t('solution-2'),
+    value: 'commercial-charging'
+  },
+  {
+    label: t('solution-3'),
+    value: 'o-and-b-charging'
+  },
+  {
+    label: t('solution-4'),
+    value: 'fleet-charging'
+  }
+]);
 
 const options = ref([
   {
-    label: 'en',
+    label: 'English',
     value: 'en'
   },
   {
-    label: 'de',
-    value: 'de'
+    label: 'Slovenščina',
+    value: 'si'
   },
   {
-    label: 'si',
-    value: 'si'
+    label: 'Deutsch',
+    value: 'de'
   }
 ]);
 
@@ -60,6 +87,10 @@ function activate(place: DrawerPlacement) {
   active.value = true;
   placement.value = place;
 }
+
+watch(solutions, (newSolution) => {
+  window.location.hash = newSolution;
+});
 </script>
 
 <script lang="ts">
