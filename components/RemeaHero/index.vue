@@ -6,7 +6,11 @@
       {{ $t('hero-text') }}
     </p>
     <div class="actions">
-      <btn variant="info" :text="$t('demo')" />
+      <btn variant="info" :text="$t('demo')" icon-placement="left">
+        <template #icon>
+          <NuxtImg class="img" src="/play-circle.svg" />
+        </template>
+      </btn>
       <btn
         variant="success"
         :text="$t('book_consultation')"
