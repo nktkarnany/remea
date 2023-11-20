@@ -4,11 +4,20 @@
   align-items: center;
   padding: 0 var(--main-margin);
 
+  button.menu {
+    display: none;
+  }
+
   @media (max-width: 480px) {
-    justify-content: center;
+    justify-content: flex-start;
 
     button {
       display: none;
+
+      &.menu {
+        display: initial;
+        margin-left: auto;
+      }
     }
   }
 }

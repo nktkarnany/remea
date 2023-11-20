@@ -39,6 +39,15 @@
       width: 100%;
     }
 
+    .title {
+      font-size: calc(var(--base-font) * 2.25);
+    }
+
+    .actions {
+      width: 100%;
+      flex-direction: column-reverse;
+    }
+
     .img {
       width: 100%;
     }

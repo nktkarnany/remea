@@ -2,7 +2,7 @@
   <div class="partners-list">
     <icon-text>
       <template #icon>
-        <NuxtImg src="/check-icon-sm.svg" />
+        <NuxtImg src="/offer-complete.svg" />
       </template>
       <template #text>
         <div class="text">
@@ -13,7 +13,7 @@
     </icon-text>
     <icon-text>
       <template #icon>
-        <NuxtImg src="/check-icon-sm.svg" />
+        <NuxtImg src="/real-time.svg" />
       </template>
       <template #text>
         <div class="text">
@@ -24,7 +24,7 @@
     </icon-text>
     <icon-text>
       <template #icon>
-        <NuxtImg src="/check-icon-sm.svg" />
+        <NuxtImg src="/check-charger.svg" />
       </template>
       <template #text>
         <div class="text">
@@ -35,7 +35,7 @@
     </icon-text>
     <icon-text>
       <template #icon>
-        <NuxtImg src="/check-icon-sm.svg" />
+        <NuxtImg src="/profit-sharing.svg" />
       </template>
       <template #text>
         <div class="text">

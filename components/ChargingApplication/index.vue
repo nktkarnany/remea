@@ -7,7 +7,11 @@
       <template #text>
         <p>{{ $t('charging_app-sub-title-1') }}</p>
         <p>{{ $t('charging_app-sub-title-2') }}</p>
-        <btn :text="$t('open_charging_app')" link class="mb-7" />
+        <btn :text="$t('open_charging_app')" link class="mb-7" icon-placement="right">
+          <template #icon>
+            <NuxtImg src="./arrow-right.svg" />
+          </template>
+        </btn>
         <div class="divider"></div>
         <icon-text class="mb-5">
           <template #icon>

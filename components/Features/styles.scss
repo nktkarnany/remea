@@ -26,15 +26,18 @@
 
     .main {
       margin: 0;
+      order: 2;
     }
 
     .img {
       width: 100%;
+      order: 1;
     }
 
     .text {
       text-align: center;
       flex-direction: column;
+      order: 3;
     }
   }
 }

@@ -1,7 +1,17 @@
 <template>
-  <n-button :type="variant" :round="round" :text="link" :size="size" :theme-overrides="BTN_THEME_OVERRIDES">{{
-    text
-  }}</n-button>
+  <n-button
+    :type="variant"
+    :round="round"
+    :text="link"
+    :size="size"
+    :theme-overrides="BTN_THEME_OVERRIDES"
+    :icon-placement="iconPlacement"
+  >
+    {{ text }}
+    <template #icon>
+      <slot name="icon"></slot>
+    </template>
+  </n-button>
 </template>
 
 <script setup lang="ts">
@@ -14,13 +24,15 @@ withDefaults(
     variant: string;
     size: string;
     round: boolean;
+    iconPlacement: string;
   }>(),
   {
-    text: 'Button',
+    text: '',
     link: false,
     variant: 'primary',
     size: 'medium',
-    round: false
+    round: false,
+    iconPlacement: 'right'
   }
 );
 </script>

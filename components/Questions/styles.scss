@@ -37,11 +37,20 @@
   @media (max-width: 480px) {
     margin-top: calc(var(--base-margin) * 7.67);
     flex-direction: column;
+    padding: calc(var(--base-margin) * 3);
 
-    .content,
-    .actions {
+    .content {
       width: 100%;
       text-align: left;
+    }
+
+    .actions {
+      width: 100%;
+      text-align: center;
+
+      .n-button {
+        width: 100%;
+      }
     }
   }
 }
