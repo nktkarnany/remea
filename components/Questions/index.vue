@@ -5,7 +5,13 @@
       <p class="text">{{ $t('questions-text') }}</p>
     </div>
     <div class="actions">
-      <btn variant="info" :text="$t('book_consultation')" />
+      <btn
+        variant="info"
+        :text="$t('book_consultation')"
+        href="https://calendly.com/remea-meet/remea"
+        tag="a"
+        target="_blank"
+      />
     </div>
   </div>
 </template>

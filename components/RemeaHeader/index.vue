@@ -24,9 +24,15 @@
     </btn>
     <n-drawer v-model:show="active" :placement="placement">
       <n-drawer-content class="text-center">
-        <btn :text="$t('product')" link />
-        <btn :text="$t('solutions')" link />
-        <btn :text="$t('partners')" link />
+        <btn :text="$t('product')" link href="#overview" tag="a" />
+        <n-popselect v-model:value="solutions" :options="solutionOptions">
+          <btn :text="$t('solutions')" link>
+            <template #icon>
+              <NuxtImg src="./chevron-down.svg" />
+            </template>
+          </btn>
+        </n-popselect>
+        <btn :text="$t('partners')" link href="#partners" tag="a" />
         <n-popselect v-model:value="locale" :options="options">
           <btn class="text-uppercase" :text="locale || 'en'" link>
             <template #icon>
