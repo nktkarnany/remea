@@ -29,7 +29,7 @@
       display: grid;
       grid-template-columns: repeat(11, 1fr);
       gap: calc(var(--base-margin) * 1.667);
-      padding: calc(var(--base-margin) * 0.667);
+      padding: calc(var(--base-margin) * 5);
 
       .badge {
         font-size: calc(var(--base-font) * 0.875);
@@ -77,7 +77,23 @@
     }
   }
 
+  @media (max-width: 1280px) {
+    &-img {
+      .badge-grid {
+        padding: calc(var(--base-margin) * 2);
+      }
+    }
+  }
+
   @media (max-width: 1024px) {
+    &-img {
+      .badge-grid {
+        padding: calc(var(--base-margin) * 1);
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
     &-img,
     &-content {
       width: 50%;

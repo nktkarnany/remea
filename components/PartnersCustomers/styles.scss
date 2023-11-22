@@ -17,11 +17,11 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    width: min(85%, 1440px);
+    width: min(100%, 800px);
   }
 
-  @media (max-width: 480px) {
-    margin-top: calc(var(--base-margin) * 7.67);
+  @media (max-width: 768px) {
+    margin-top: calc(var(--base-margin) * 3);
 
     .text {
       font-size: calc(var(--base-font) * 1);

@@ -26,12 +26,13 @@
     .content {
       padding: 0;
       padding-top: calc(var(--base-margin) * 2);
-      width: 100%;
+      margin: 0 auto;
+      width: min(85%, 1024px);
     }
 
     .img {
       margin: 0 auto;
-      width: min(85%, 1024px);
+      width: 75%;
     }
   }
 

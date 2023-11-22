@@ -13,7 +13,7 @@
     letter-spacing: -0.9px;
     text-align: center;
     margin: 0;
-    width: calc(var(--base-margin) * 70.5);
+    width: min(80%, 800px);
   }
 
   .sub-title {
@@ -22,7 +22,7 @@
     line-height: calc(var(--base-font) * 1.875);
     text-align: center;
     margin: 0;
-    width: calc(var(--base-margin) * 64);
+    width: min(80%, 800px);
   }
 
   .actions {

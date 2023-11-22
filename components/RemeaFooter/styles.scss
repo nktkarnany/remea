@@ -4,7 +4,7 @@
   gap: calc(var(--base-margin) * 5.333);
   background-color: var(--white);
   margin: 0 auto;
-  width: min(85%, 1440px);
+  width: min(100%, 1440px);
 
   .content {
     color: var(--gray-500);
@@ -38,16 +38,7 @@
   }
 
   @media (max-width: 1024px) {
-    width: min(100%, 1024px);
-    gap: calc(var(--base-margin) * 2);
-
-    .links {
-      gap: calc(var(--base-margin) * 2);
-    }
-  }
-
-  @media (max-width: 480px) {
-    margin-top: calc(var(--base-margin) * 7.67);
+    margin: calc(var(--base-margin) * 7.67) 0;
     flex-direction: column;
 
     .links {

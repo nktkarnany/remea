@@ -1,7 +1,7 @@
 .platform-overview {
   display: flex;
   padding: var(--main-margin) 0 0;
-  gap: calc(var(--base-margin) * 5.333);
+  gap: calc(var(--base-margin) * 3);
   background-color: var(--white);
   margin: 0 auto;
   width: min(85%, 1440px);
@@ -14,14 +14,24 @@
     width: 50%;
   }
 
-  @media (max-width: 1024px) {
-    width: min(100%, 1024px);
+  @media (max-width: 768px) {
+    margin-top: calc(var(--base-margin) * 7.67);
+    flex-direction: column;
+    gap: calc(var(--base-margin) * 2);
+    width: min(100%, 800px);
+
+    .img,
+    .content {
+      margin: 0 auto;
+      width: min(85%, 800px);
+    }
   }
 
   @media (max-width: 480px) {
     margin-top: calc(var(--base-margin) * 7.67);
     flex-direction: column;
     gap: calc(var(--base-margin) * 2);
+    width: min(100%, 800px);
 
     .img,
     .content {

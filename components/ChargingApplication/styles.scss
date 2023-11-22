@@ -19,6 +19,7 @@
 
   .img {
     width: 50%;
+    object-fit: contain;
   }
 
   .content {
@@ -33,7 +34,7 @@
     }
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 768px) {
     flex-direction: column;
     gap: calc(var(--base-margin) * 2);
     width: 100%;
