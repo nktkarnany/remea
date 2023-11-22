@@ -9,14 +9,23 @@
   background-color: var(--white);
 
   .main {
-    margin-left: calc(var(--base-margin) * 30);
-    margin-right: calc(var(--base-margin) * 30);
+    width: min(85%, 1440px);
   }
 
   .text {
     display: flex;
     gap: calc(var(--base-margin) * 2.667);
-    margin: 0 var(--main-margin);
+    width: min(85%, 1440px);
+  }
+
+  @media (max-width: 1024px) {
+    .text {
+      width: 100%;
+    }
+
+    .img {
+      width: min(85%, 1024px);
+    }
   }
 
   @media (max-width: 480px) {
@@ -27,6 +36,7 @@
     .main {
       margin: 0;
       order: 2;
+      width: 100%;
     }
 
     .img {
@@ -38,6 +48,7 @@
       text-align: center;
       flex-direction: column;
       order: 3;
+      width: 100%;
     }
   }
 }

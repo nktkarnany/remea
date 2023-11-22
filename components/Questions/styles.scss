@@ -5,7 +5,8 @@
   background-color: var(--secondary);
   border-radius: calc(var(--base-margin) * 1.333);
   color: var(--white);
-  margin: var(--main-margin) var(--main-margin) 0;
+  margin: var(--main-margin) auto 0;
+  width: min(85%, 1440px);
 
   .content,
   .actions {
@@ -32,6 +33,10 @@
     .n-button--info-type {
       color: var(--secondary);
     }
+  }
+
+  @media (max-width: 1024px) {
+    width: 100%;
   }
 
   @media (max-width: 480px) {

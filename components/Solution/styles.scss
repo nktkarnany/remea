@@ -68,6 +68,28 @@
     }
   }
 
+  @media (max-width: 1024px) {
+    &-img,
+    &-content {
+      width: 50%;
+    }
+
+    &-content {
+      padding-left: 0;
+      padding-right: calc(var(--base-margin) * 0.667);
+    }
+
+    .badge-grid {
+      padding: calc(var(--base-margin) * 0.667);
+      top: 50%;
+      transform: translateY(-50%);
+
+      .badge {
+        font-size: calc(var(--base-font) * 0.5);
+      }
+    }
+  }
+
   @media (max-width: 480px) {
     flex-direction: column-reverse;
     padding-top: calc(var(--base-margin) * 5.333);

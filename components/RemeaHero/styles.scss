@@ -32,6 +32,10 @@
     margin-bottom: calc(var(--base-margin) * 4.167);
   }
 
+  .hero-img {
+    width: min(85%, 818px);
+  }
+
   @media (max-width: 480px) {
     .title,
     .sub-title {
@@ -48,7 +52,7 @@
       flex-direction: column-reverse;
     }
 
-    .img {
+    .hero-img {
       width: 100%;
     }
   }

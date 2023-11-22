@@ -1,8 +1,10 @@
 .platform-overview {
   display: flex;
-  padding: var(--main-margin) var(--main-margin) 0;
+  padding: var(--main-margin) 0 0;
   gap: calc(var(--base-margin) * 5.333);
   background-color: var(--white);
+  margin: 0 auto;
+  width: min(85%, 1440px);
 
   .img {
     width: 50%;
@@ -10,6 +12,10 @@
 
   .content {
     width: 50%;
+  }
+
+  @media (max-width: 1024px) {
+    width: min(100%, 1024px);
   }
 
   @media (max-width: 480px) {

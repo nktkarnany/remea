@@ -1,8 +1,10 @@
 .remea-footer {
   display: flex;
-  padding: var(--main-margin) var(--main-margin) 0;
+  padding: var(--main-margin) 0 0;
   gap: calc(var(--base-margin) * 5.333);
   background-color: var(--white);
+  margin: 0 auto;
+  width: min(85%, 1440px);
 
   .content {
     color: var(--gray-500);
@@ -31,6 +33,15 @@
         padding-bottom: calc(var(--base-margin) * 1);
         padding-left: 0;
       }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    width: min(100%, 1024px);
+    gap: calc(var(--base-margin) * 2);
+
+    .links {
+      gap: calc(var(--base-margin) * 2);
     }
   }
 

@@ -1,8 +1,10 @@
 .free-consultation {
   display: flex;
   color: var(--white);
-  padding: var(--main-margin) var(--main-margin) 0;
+  padding: var(--main-margin) 0 0;
   background-color: var(--white);
+  margin: 0 auto;
+  width: min(85%, 1440px);
 
   .content,
   .img {
@@ -32,6 +34,22 @@
 
     .btn {
       color: var(--secondary);
+    }
+  }
+
+  @media (max-width: 1024px) {
+    width: 100%;
+
+    .content {
+      padding-left: calc(var(--base-margin) * 2);
+
+      .title {
+        font-size: calc(var(--base-font) * 1);
+      }
+
+      .text {
+        font-size: calc(var(--base-font) * 0.875);
+      }
     }
   }
 

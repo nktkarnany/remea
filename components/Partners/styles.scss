@@ -4,14 +4,25 @@
 
   &-main {
     text-align: center;
-    margin-left: calc(var(--base-margin) * 24);
-    margin-right: calc(var(--base-margin) * 24);
+    margin: 0 auto;
+    width: min(85%, 1440px);
     margin-bottom: calc(var(--base-margin) * 8);
   }
 
   &-content {
     display: flex;
     padding: 0 var(--main-margin);
+  }
+
+  @media (max-width: 1024px) {
+    &-content {
+      width: 100%;
+      padding: 0;
+
+      img {
+        display: none;
+      }
+    }
   }
 
   @media (max-width: 480px) {

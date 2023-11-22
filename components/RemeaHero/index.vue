@@ -19,7 +19,7 @@
         target="_blank"
       />
     </div>
-    <NuxtImg class="img" src="/hero-img.png" />
+    <NuxtImg class="hero-img" src="/hero-img.png" />
   </div>
 </template>
 
