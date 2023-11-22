@@ -9,13 +9,13 @@
   background-color: var(--white);
 
   .main {
-    width: min(90%, 1440px);
+    width: min(80%, 1440px);
   }
 
   .text {
     display: flex;
     gap: calc(var(--base-margin) * 2.667);
-    width: min(90%, 1440px);
+    width: min(100%, 1440px);
   }
 
   @media (max-width: 1024px) {

@@ -4,10 +4,11 @@
   gap: calc(var(--base-margin) * 3);
   background-color: var(--white);
   margin: 0 auto;
-  width: min(90%, 1440px);
+  width: min(100%, 1440px);
 
   .img {
     width: 50%;
+    object-fit: cover;
   }
 
   .content {
@@ -15,15 +16,14 @@
   }
 
   @media (max-width: 768px) {
-    margin-top: calc(var(--base-margin) * 7.67);
     flex-direction: column;
     gap: calc(var(--base-margin) * 2);
-    width: min(100%, 800px);
+    width: 85%;
 
     .img,
     .content {
       margin: 0 auto;
-      width: min(85%, 800px);
+      width: 100%;
       text-align: center;
     }
   }

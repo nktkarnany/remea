@@ -6,7 +6,7 @@
   border-radius: calc(var(--base-margin) * 1.333);
   color: var(--white);
   margin: var(--main-margin) auto 0;
-  width: min(90%, 1440px);
+  width: min(100%, 1440px);
 
   .content,
   .actions {
@@ -35,8 +35,8 @@
     }
   }
 
-  @media (max-width: 768px) {
-    width: 90%;
+  @media (max-width: 1440px) {
+    width: calc(100% - calc(var(--base-margin) * 2));
   }
 
   @media (max-width: 480px) {

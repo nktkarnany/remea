@@ -1,7 +1,8 @@
 .solution {
   display: flex;
+  padding: 0 calc(var(--base-margin) * 2);
   margin: 0 auto;
-  width: min(90%, 1440px);
+  width: min(100%, 1440px);
 
   &-content {
     display: flex;
@@ -80,7 +81,12 @@
   @media (max-width: 1280px) {
     &-img {
       .badge-grid {
+        gap: calc(var(--base-margin) * 1);
         padding: calc(var(--base-margin) * 2);
+
+        .badge {
+          font-size: calc(var(--base-font) * 0.65);
+        }
       }
     }
   }
@@ -88,7 +94,12 @@
   @media (max-width: 1024px) {
     &-img {
       .badge-grid {
+        gap: calc(var(--base-margin) * 1);
         padding: calc(var(--base-margin) * 1);
+
+        .badge {
+          font-size: calc(var(--base-font) * 0.65);
+        }
       }
     }
   }

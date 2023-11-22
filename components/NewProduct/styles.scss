@@ -2,10 +2,11 @@
   display: flex;
   padding: var(--main-margin) calc(var(--base-margin) * 2) 0;
   margin: 0 auto;
-  width: min(90%, 1440px);
+  width: min(100%, 1440px);
 
   .content {
-    padding-right: var(--main-margin);
+    padding-right: calc(var(--base-margin) * 2);
+    width: min(80%, 1440px);
   }
 
   .img {
@@ -26,7 +27,7 @@
       padding: 0;
       padding-top: calc(var(--base-margin) * 2);
       margin: 0 auto;
-      width: min(85%, 1024px);
+      text-align: center;
     }
 
     .img {
