@@ -1,10 +1,10 @@
 .platform-overview {
   display: flex;
-  padding: var(--main-margin) 0 0;
+  padding: var(--main-margin) calc(var(--base-margin) * 2) 0;
   gap: calc(var(--base-margin) * 3);
   background-color: var(--white);
   margin: 0 auto;
-  width: min(85%, 1440px);
+  width: min(90%, 1440px);
 
   .img {
     width: 50%;
@@ -24,6 +24,7 @@
     .content {
       margin: 0 auto;
       width: min(85%, 800px);
+      text-align: center;
     }
   }
 

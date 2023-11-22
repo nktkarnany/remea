@@ -1,5 +1,5 @@
 <template>
-  <main class="mx-5">
+  <main>
     <remea-header />
     <remea-hero />
     <partners-customers />

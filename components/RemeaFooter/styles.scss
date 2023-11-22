@@ -1,6 +1,6 @@
 .remea-footer {
   display: flex;
-  padding: var(--main-margin) 0 0;
+  padding: var(--main-margin) calc(var(--base-margin) * 2) 0;
   gap: calc(var(--base-margin) * 5.333);
   background-color: var(--white);
   margin: 0 auto;
@@ -40,6 +40,10 @@
   @media (max-width: 1024px) {
     margin: calc(var(--base-margin) * 7.67) 0;
     flex-direction: column;
+
+    .content {
+      width: 100%;
+    }
 
     .links {
       display: grid;

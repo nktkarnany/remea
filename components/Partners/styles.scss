@@ -1,12 +1,13 @@
 .partners {
   background-color: var(--white);
   margin: 0 auto;
-  width: min(85%, 1440px);
+  width: min(90%, 1440px);
+  padding: 0 calc(var(--base-margin) * 2) 0;
 
   &-main {
     text-align: center;
     margin: 0 auto;
-    width: min(85%, 1440px);
+    width: min(80%, 1440px);
     margin-bottom: calc(var(--base-margin) * 8);
   }
 

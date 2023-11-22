@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   gap: calc(var(--base-margin) * 2.67);
-  padding: var(--main-margin) 0 0 0;
+  padding: var(--main-margin) calc(var(--base-margin) * 2) 0;
   background-color: var(--white);
 
   .text {
@@ -31,7 +31,11 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       margin: 0;
-      gap: calc(var(--base-margin) * 2);
+      gap: calc(var(--base-margin) * 3);
+
+      .img {
+        width: 65%;
+      }
 
       .img1 {
         grid-area: 1 / 1 / auto / span 2;
