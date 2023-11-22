@@ -3,10 +3,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding-right: calc(var(--base-margin) * 7.67);
+  width: 50%;
 
   .icon-text {
-    margin-bottom: calc(var(--base-margin) * 5);
+    margin-bottom: calc(var(--base-margin) * 3);
   }
 
   p.title {
@@ -21,6 +21,10 @@
     font-weight: 400;
     line-height: calc(var(--base-font) * 1.5);
     color: var(--gray-500);
+  }
+
+  @media (max-width: 1024px) {
+    width: 100%;
   }
 
   @media (max-width: 480px) {

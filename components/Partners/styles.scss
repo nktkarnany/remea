@@ -1,6 +1,8 @@
 .partners {
   padding-top: var(--main-margin);
   background-color: var(--white);
+  margin: 0 auto;
+  width: min(85%, 1440px);
 
   &-main {
     text-align: center;
@@ -11,7 +13,12 @@
 
   &-content {
     display: flex;
-    padding: 0 var(--main-margin);
+
+    img {
+      height: 100%;
+      width: 50%;
+      object-fit: cover;
+    }
   }
 
   @media (max-width: 1024px) {

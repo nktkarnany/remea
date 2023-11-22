@@ -1,16 +1,25 @@
 .solution {
   display: flex;
+  margin: 0 auto;
+  width: min(85%, 1440px);
 
   &-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 0 var(--main-margin);
+    width: 50%;
   }
 
   &-img {
     position: relative;
+    width: 50%;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
 
     .badge-grid {
       position: absolute;
@@ -20,7 +29,7 @@
       display: grid;
       grid-template-columns: repeat(11, 1fr);
       gap: calc(var(--base-margin) * 1.667);
-      padding: calc(var(--base-margin) * 5) calc(var(--base-margin) * 7);
+      padding: calc(var(--base-margin) * 0.667);
 
       .badge {
         font-size: calc(var(--base-font) * 0.875);
@@ -94,6 +103,7 @@
     flex-direction: column-reverse;
     padding-top: calc(var(--base-margin) * 5.333);
     gap: calc(var(--base-margin) * 2);
+    width: 100%;
 
     &-img,
     &-content {
@@ -111,7 +121,7 @@
     }
 
     .badge-grid {
-      padding: calc(var(--base-margin));
+      padding: calc(var(--base-margin) * 0.667);
       top: 50%;
       transform: translateY(-50%);
 
